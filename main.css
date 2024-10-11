@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 22px;
+    background-color: #F3D7B7;
+}
+.container{
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.header__link{
+    color: rgb(51, 51, 51);
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+.header__link:hover{
+    color: red;
+}
+.header__link:active{
+    color: blue;
+}
+.hero{
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 257px;
+    background-color: #F3D7B7;
+}
+.hero__textbox{
+    width: 447px;
+}
+.title{
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+}
+.hero__tex{
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 47px 0;
+}
+.hero__btn{
+    width: 193px;
+    border-radius: 100px;
+    background-color: rgb(10, 119, 95);
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+}
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.hero__img{
+    position: relative;
+}
+.rasm{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hero__img::before{
+    background-image: url("./images/dumaloq.png");
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: -70px;
+    right: 650px;
+    z-index: 2;
+    transform: rotate(0);
+    background-position: center;
+    animation-name: dumaloq;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes dumaloq{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+.title__card{
+    color: rgb(0, 0, 0);
+font-family: Roboto;
+font-size: 50px;
+font-weight: 700;
+line-height: 59px;
+width: 368px;
+margin: 0 auto;
+}
+.card__hero{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero__tex{
+    color: rgb(0, 0, 0);
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+.section{
+    margin-top: 108px;
+}
+h3{
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+}
+.card__item{
+    display:flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 1150px;
+    margin: 0 auto;
+}
+.card__div{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1150px;
+}
+.card__text{
+    width: 468px;
+    color: rgb(51, 51, 51);
+font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 34px;
+}
+.qop{
+    margin-top: 100px;
+}
+.qop__item{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.qop__title{
+    color: rgb(0, 0, 0);
+font-family: "Roboto";
+font-size: 50px;
+font-weight: 700;
+line-height: 59px;
+margin-top: 190px;
+width: 368px;
+margin: 0 auto;
+}
+.qop__text{
+    width: 468px;
+    color: rgb(51, 51, 51);
+font-family: Roboto;
+font-size: 22px;
+font-weight: 400;
+line-height: 34px;
+}
+.qop__item:nth-child(2){
+    flex-direction: row-reverse;
+}
+.qop__item:nth-child(4){
+    flex-direction: row-reverse;
+}
+.qop__list{
+    margin-top: 42px;
+}
+.qop__img{
+    transform: scale(1);
+}
+.qop__img:hover{
+    transform: scale(1.5);
+}
+.qop__footer{
+    background-color: #F3D7B7;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.footer__img{
+    gap: 30px;
+    display: flex;
+}
+.rasm__qop{
+    margin-right: 80px;
+}
+.coffe__section{
+    margin-top: 100px;
+    height: 640px;
+}
+.coffee__text{
+    padding-top: 50px;
+    width: 646px;
+    color: rgb(51, 51, 51);
+font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+}
+.coffee__title{
+    gap: 100px;
+}
+.coffee__item{
+    color: rgb(0, 0, 0);
+font-family: Roboto;
+font-size: 48px;
+font-weight: 700;
+line-height: 56px;
+}
+.coffee__qop{
+    background-color: #F3D7B7;  
+    padding-top: 130px;
+    height: 710px;
+    background-color: rgb(201, 155, 103);
+}
+.coffe__img{
+   position: relative;
+   bottom: 170px;
+}
+.coffe__title{
+    color: rgb(255, 255, 255);
+font-family: Roboto;
+font-size: 50px;
+font-weight: 700;
+line-height: 59px;
+}
+.hero__text{
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 47px 0;
+}
